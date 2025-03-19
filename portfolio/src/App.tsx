@@ -1,3 +1,4 @@
+import Foto from "./img/linkedin.jpg"
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import AOS from 'aos';
@@ -25,7 +26,6 @@ function App() {
 
   return (
     <div className="bg-white">
-      {/* Navigation */}
       <nav className="fixed w-full bg-white shadow-md z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-center space-x-8">
@@ -45,7 +45,6 @@ function App() {
         </div>
       </nav>
 
-      {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center pt-20">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2" data-aos="fade-right">
@@ -57,9 +56,8 @@ function App() {
             </p>
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
-            {/* Substitua a URL abaixo pela URL da sua foto */}
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+              src={Foto}
               alt="Victor Alves Carmona"
               className="rounded-full w-64 h-64 object-cover mx-auto shadow-2xl"
             />
@@ -67,7 +65,6 @@ function App() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Sobre Mim</h2>
@@ -83,7 +80,6 @@ function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="py-20">
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Habilidades</h2>
@@ -106,7 +102,6 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Projetos</h2>
