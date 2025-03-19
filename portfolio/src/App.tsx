@@ -1,4 +1,7 @@
-import Foto from "./img/linkedin.jpg"
+import Foto from "./img/linkedin.jpg";
+import FotoPortoConserta from "./img/projeto-porto-conserta.png";
+import FotoMundivox from "./img/mundivox.png"
+import FotoEnergiaSolidaria from "./img/projeto-energia-solidaria-teste.png"
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import AOS from 'aos';
@@ -52,7 +55,7 @@ function App() {
               Victor Alves Carmona
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Analista de Dados | Desenvolvedor em Formação
+              Analista de Dados | Desenvolvedor Fullstack
             </p>
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
@@ -109,14 +112,42 @@ function App() {
             {/* Exemplo de Projeto - Substitua com seus projetos reais */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-                alt="Projeto Analytics"
+                src={FotoMundivox}
+                alt="Projeto Mundivox"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Análise de Dados</h3>
                 <p className="text-gray-600">
-                  Projeto de análise de dados utilizando Python e Power BI.
+                  Projeto de análise de dados utilizando Excel, Power BI & Apache Superset.
+                </p>
+              </div>
+            </div>
+            {/* Adicione mais projetos aqui */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+              <img
+                src={FotoPortoConserta}
+                alt="Projeto Porto Conserta"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Porto Conserta: Plataforma Digital</h3>
+                <p className="text-gray-600">
+                  Projeto de criação de site usando HTML e CSS.
+                </p>
+              </div>
+            </div>
+            {/* Adicione mais projetos aqui */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+              <img
+                src={FotoEnergiaSolidaria}
+                alt="Projeto Energia Solidária"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Energia Solidária: Plataforma Digital</h3>
+                <p className="text-gray-600">
+                  Projeto de criação de site usando HTML, CSS & NextJs.
                 </p>
               </div>
             </div>
