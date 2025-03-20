@@ -3,6 +3,14 @@ import FotoPortoConserta from "./img/projeto-porto-conserta.png";
 import FotoMundivox from "./img/mundivox.png"
 import FotoEnergiaSolidaria from "./img/projeto-energia-solidaria-teste.png"
 import FotoFuturoABeiraMar from "./img/projeto-futuro-a-beira-mar-teste.png"
+import IconeExcel from "./img/icone-excel.png"
+import IconeJava from "./img/icone-java.png"
+import IconeSQL from "./img/icone-sql.png"
+import IconeHTML from "./img/icone-html.png"
+import IconePowerBI from "./img/icone-powerbi.png"
+import IconePython from "./img/icone-python.png"
+import IconePostgreSQL from "./img/icone-postgresql.png"
+import IconeCSS from "./img/icone-css.png"
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import AOS from 'aos';
@@ -18,14 +26,14 @@ function App() {
   }, []);
 
   const skills = [
-    { name: 'Excel', level: 90 },
-    { name: 'Power BI', level: 85 },
-    { name: 'Java', level: 75 },
-    { name: 'Python', level: 80 },
-    { name: 'SQL', level: 85 },
-    { name: 'PostgreSQL', level: 80 },
-    { name: 'HTML', level: 75 },
-    { name: 'CSS', level: 70 },
+    { name: 'Excel', icon: IconeExcel, level: 'Avançado' },
+    { name: 'Power BI', icon: IconePowerBI, level: 'Avançado' },
+    { name: 'Java', icon: IconeJava, level: 'Intermediário' },
+    { name: 'Python', icon: IconePython, level: 'Avançado' },
+    { name: 'SQL', icon: IconeSQL, level: 'Intermediário' },
+    { name: 'PostgreSQL', icon: IconePostgreSQL, level: 'Avançado' },
+    { name: 'HTML', icon: IconeHTML, level: 'Médio' },
+    { name: 'CSS', icon: IconeCSS, level: 'Médio' },
   ];
 
   return (
@@ -89,16 +97,11 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Habilidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
-              <div key={skill.name} className="p-4" data-aos="fade-up" data-aos-delay={index * 100}>
-                <div className="flex justify-between mb-2">
+              <div key={skill.name} className="flex items-center p-4" data-aos="fade-up" data-aos-delay={index * 100}>
+                <img src={skill.icon} alt={skill.name} className="w-8 h-8 mr-4" />
+                <div>
                   <span className="text-gray-700 font-medium">{skill.name}</span>
-                  <span className="text-gray-600">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full transition-all duration-500"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
+                  <div className="text-gray-600 text-sm">{skill.level}</div>
                 </div>
               </div>
             ))}
@@ -110,7 +113,6 @@ function App() {
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Exemplo de Projeto - Substitua com seus projetos reais */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
               <img
                 src={FotoMundivox}
@@ -124,7 +126,6 @@ function App() {
                 </p>
               </div>
             </div>
-            {/* Adicione mais projetos aqui */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
               <img
                 src={FotoPortoConserta}
@@ -138,7 +139,6 @@ function App() {
                 </p>
               </div>
             </div>
-            {/* Adicione mais projetos aqui */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
               <img
                 src={FotoEnergiaSolidaria}
@@ -152,7 +152,6 @@ function App() {
                 </p>
               </div>
             </div>
-            {/* Adicione mais projetos aqui */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
               <img
                 src={FotoFuturoABeiraMar}
@@ -166,7 +165,6 @@ function App() {
                 </p>
               </div>
             </div>
-            {/* Adicione mais projetos aqui */}
           </div>
         </div>
       </section>
@@ -176,7 +174,7 @@ function App() {
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Contato</h2>
           <div className="flex justify-center space-x-8">
-            <a href="victorcarmona1802@gmail.com" className="text-gray-600 hover:text-blue-600">
+            <a href="mailto:victorcarmona1802@gmail.com" className="text-gray-600 hover:text-blue-600">
               <Mail size={24} />
             </a>
             <a href="https://linkedin.com/in/carmowa" className="text-gray-600 hover:text-blue-600">
