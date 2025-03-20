@@ -82,12 +82,17 @@ function App() {
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Sobre Mim</h2>
           <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Sou Victor Alves Carmona, tenho 20 anos e sou natural de São Paulo. Estudo Análise e Desenvolvimento de Sistemas na FIAP, após um ano de Engenharia de Produção no Mackenzie, onde descobri minha paixão por programação e resolução de problemas.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Trabalho como Analista de Dados na Mundivox Communications, utilizando ferramentas como Excel, Power BI, Apache Superset, e conhecimentos em Python, Java, SQL, PostgreSQL, Git e GitHub. Sou adepto de metodologias ágeis e tenho experiência em trabalho em equipe e comunicação.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+            Além da minha carreira técnica, sou apaixonado por esportes e praticante de lutas, tendo inclusive dado aulas de boxe. Já trabalhei com vendas, o que me ajudou a desenvolver habilidades de negociação e atendimento ao cliente. Falo inglês avançado e espanhol básico.
+            </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Olá! Sou Victor Alves Carmona, tenho 20 anos e atualmente estou cursando Análise e
-              Desenvolvimento de Sistemas na FIAP. Trabalho como Analista de Dados na Mundivox
-              Communications, onde aplico minhas habilidades técnicas para transformar dados em
-              insights valiosos. Sou apaixonado por tecnologia e sempre busco aprender novas
-              ferramentas e metodologias para aprimorar meu trabalho.
+            Sempre em busca de novos desafios, estou focado em continuar meu crescimento profissional e contribuir com soluções inovadoras.
             </p>
           </div>
         </div>
