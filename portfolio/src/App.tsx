@@ -191,16 +191,16 @@ function App() {
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Contato</h2>
           <div className="flex justify-center space-x-8">
-            <a href="mailto:victorcarmona1802@gmail.com" className="text-gray-600 hover:text-blue-600">
+            <a href="mailto:victorcarmona1802@gmail.com" className="text-gray-600 hover:text-blue-600" target="__blank">
               <Mail size={24} />
             </a>
-            <a href="https://linkedin.com/in/carmowa" className="text-gray-600 hover:text-blue-600">
+            <a href="https://linkedin.com/in/carmowa" className="text-gray-600 hover:text-blue-600" target="__blank">
               <Linkedin size={24} />
             </a>
-            <a href="https://github.com/carmowa" className="text-gray-600 hover:text-blue-600">
+            <a href="https://github.com/carmowa" className="text-gray-600 hover:text-blue-600" target="__blank">
               <Github size={24} />
             </a>
-            <a href="https://instagram.com/thecaarmona" className="text-gray-600 hover:text-blue-600">
+            <a href="https://instagram.com/thecaarmona" className="text-gray-600 hover:text-blue-600" target="__blank">
               <Instagram size={24} />
             </a>
           </div>
