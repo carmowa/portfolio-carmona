@@ -2,6 +2,7 @@ import Foto from "./img/linkedin.jpg";
 import FotoPortoConserta from "./img/projeto-porto-conserta.png";
 import FotoMundivox from "./img/mundivox.png"
 import FotoEnergiaSolidaria from "./img/projeto-energia-solidaria-teste.png"
+import FotoFuturoABeiraMar from "./img/projeto-futuro-a-beira-mar-teste.png"
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import AOS from 'aos';
@@ -148,6 +149,20 @@ function App() {
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Energia Solidária: Plataforma Digital</h3>
                 <p className="text-gray-600">
                   Projeto de criação de site usando HTML, CSS & NextJs.
+                </p>
+              </div>
+            </div>
+            {/* Adicione mais projetos aqui */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+              <img
+                src={FotoFuturoABeiraMar}
+                alt="Projeto Futuro Á Beira Mar"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Futuro Á Beira Mar: Plataforma Digital</h3>
+                <p className="text-gray-600">
+                  Projeto de criação de site usando HTML, CSS & React.
                 </p>
               </div>
             </div>
