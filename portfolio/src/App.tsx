@@ -1,21 +1,22 @@
 import Foto from "./img/linkedin.jpg";
 import FotoPortoConserta from "./img/projeto-porto-conserta.png";
-import FotoMundivox from "./img/mundivox.png"
-import FotoEnergiaSolidaria from "./img/projeto-energia-solidaria-teste.png"
-import FotoFuturoABeiraMar from "./img/projeto-futuro-a-beira-mar-teste.png"
-import IconeExcel from "./img/icone-excel.png"
-import IconeJava from "./img/icone-java.png"
-import IconeSQL from "./img/icone-sql.png"
-import IconeHTML from "./img/icone-html.png"
-import IconePowerBI from "./img/icone-powerbi.png"
-import IconePython from "./img/icone-python.png"
-import IconePostgreSQL from "./img/icone-postgresql.png"
-import IconeCSS from "./img/icone-css.png"
-import React, { useEffect } from 'react';
-import { Link } from 'react-scroll';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
+import FotoMundivox from "./img/mundivox.png";
+import FotoEnergiaSolidaria from "./img/projeto-energia-solidaria-teste.png";
+import FotoFuturoABeiraMar from "./img/projeto-futuro-a-beira-mar-teste.png";
+import IconeExcel from "./img/icone-excel.png";
+import IconeJava from "./img/icone-java.png";
+import IconeSQL from "./img/icone-sql.png";
+import IconeHTML from "./img/icone-html.png";
+import IconePowerBI from "./img/icone-powerbi.png";
+import IconePython from "./img/icone-python.png";
+import IconePostgreSQL from "./img/icone-postgresql.png";
+import IconeCSS from "./img/icone-css.png";
+import IconeTeste from "./img/icone-teste.png"; // Certifique-se de que a imagem esteja no diretório correto
+import React, { useEffect } from "react";
+import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 
 function App() {
   useEffect(() => {
@@ -26,14 +27,14 @@ function App() {
   }, []);
 
   const skills = [
-    { name: 'Excel', icon: IconeExcel, level: 'Avançado' },
-    { name: 'Power BI', icon: IconePowerBI, level: 'Avançado' },
-    { name: 'Java', icon: IconeJava, level: 'Intermediário' },
-    { name: 'Python', icon: IconePython, level: 'Avançado' },
-    { name: 'SQL', icon: IconeSQL, level: 'Intermediário' },
-    { name: 'PostgreSQL', icon: IconePostgreSQL, level: 'Avançado' },
-    { name: 'HTML', icon: IconeHTML, level: 'Médio' },
-    { name: 'CSS', icon: IconeCSS, level: 'Médio' },
+    { name: "Excel", icon: IconeExcel, level: "Avançado" },
+    { name: "Power BI", icon: IconePowerBI, level: "Avançado" },
+    { name: "Python", icon: IconePython, level: "Avançado" },
+    { name: "PostgreSQL", icon: IconePostgreSQL, level: "Avançado" },
+    { name: "Java", icon: IconeJava, level: "Intermediário" },
+    { name: "SQL", icon: IconeSQL, level: "Intermediário" },
+    { name: "HTML", icon: IconeHTML, level: "Intermediário" },
+    { name: "CSS", icon: IconeCSS, level: "Intermediário" },
   ];
 
   return (
@@ -41,7 +42,7 @@ function App() {
       <nav className="fixed w-full bg-white shadow-md z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-center space-x-8">
-            {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
+            {["home", "about", "skills", "projects", "contact"].map((item) => (
               <Link
                 key={item}
                 to={item}
@@ -82,10 +83,10 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Sobre Mim</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-600 text-lg leading-relaxed">
-              Olá! Sou Victor Alves Carmona, tenho 20 anos e atualmente estou cursando Análise e 
-              Desenvolvimento de Sistemas na FIAP. Trabalho como Analista de Dados na Mundivox 
-              Communications, onde aplico minhas habilidades técnicas para transformar dados em 
-              insights valiosos. Sou apaixonado por tecnologia e sempre busco aprender novas 
+              Olá! Sou Victor Alves Carmona, tenho 20 anos e atualmente estou cursando Análise e
+              Desenvolvimento de Sistemas na FIAP. Trabalho como Analista de Dados na Mundivox
+              Communications, onde aplico minhas habilidades técnicas para transformar dados em
+              insights valiosos. Sou apaixonado por tecnologia e sempre busco aprender novas
               ferramentas e metodologias para aprimorar meu trabalho.
             </p>
           </div>
@@ -95,13 +96,29 @@ function App() {
       <section id="skills" className="py-20">
         <div className="container mx-auto px-6" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Habilidades</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
-              <div key={skill.name} className="flex items-center p-4" data-aos="fade-up" data-aos-delay={index * 100}>
+              <div
+                key={skill.name}
+                className="flex items-center p-4"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <img src={skill.icon} alt={skill.name} className="w-8 h-8 mr-4" />
                 <div>
                   <span className="text-gray-700 font-medium">{skill.name}</span>
                   <div className="text-gray-600 text-sm">{skill.level}</div>
+                </div>
+              </div>
+            ))}
+
+            {/* Adicionando os ícones de Teste */}
+            {[...Array(4)].map((_, index) => (
+              <div key={`teste-${index}`} className="flex items-center p-4" data-aos="fade-up">
+                <img src={IconeTeste} alt="Teste" className="w-8 h-8 mr-4" />
+                <div>
+                  <span className="text-gray-700 font-medium">Teste</span>
+                  <div className="text-gray-600 text-sm">Básico</div>
                 </div>
               </div>
             ))}
