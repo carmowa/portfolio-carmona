@@ -11,7 +11,11 @@ import IconePowerBI from "./img/icone-powerbi.png";
 import IconePython from "./img/icone-python.png";
 import IconePostgreSQL from "./img/icone-postgresql.png";
 import IconeCSS from "./img/icone-css.png";
-import IconeTeste from "./img/icone-teste.png"; // Certifique-se de que a imagem esteja no diretório correto
+import IconeWord from "./img/icone-word.png";
+import IconePowerPoint from "./img/icone-power-point.png";
+import IconeIngles from "./img/icone-ingles.png";
+import IconeEspanhol from "./img/icone-espanha.png";
+
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import AOS from "aos";
@@ -30,11 +34,15 @@ function App() {
     { name: "Excel", icon: IconeExcel, level: "Avançado" },
     { name: "Power BI", icon: IconePowerBI, level: "Avançado" },
     { name: "Python", icon: IconePython, level: "Avançado" },
+    { name: "Word", icon: IconeWord, level: "Avançado" },
+    { name: "Power Point", icon: IconePowerPoint, level: "Avançado" },
+    { name: "Inglês", icon: IconeIngles, level: "Avançado" },
     { name: "PostgreSQL", icon: IconePostgreSQL, level: "Avançado" },
     { name: "Java", icon: IconeJava, level: "Intermediário" },
     { name: "SQL", icon: IconeSQL, level: "Intermediário" },
     { name: "HTML", icon: IconeHTML, level: "Intermediário" },
     { name: "CSS", icon: IconeCSS, level: "Intermediário" },
+    { name: "Espanhol", icon: IconeEspanhol, level: "Básico" },
   ];
 
   return (
@@ -83,16 +91,16 @@ function App() {
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Sobre Mim</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Sou Victor Alves Carmona, tenho 20 anos e sou natural de São Paulo. Estudo Análise e Desenvolvimento de Sistemas na FIAP, após um ano de Engenharia de Produção no Mackenzie, onde descobri minha paixão por programação e resolução de problemas.
+              Sou Victor Alves Carmona, tenho 20 anos e sou natural de São Paulo. Estudo Análise e Desenvolvimento de Sistemas na FIAP, após um ano de Engenharia de Produção no Mackenzie, onde descobri minha paixão por programação e resolução de problemas.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Trabalho como Analista de Dados na Mundivox Communications, utilizando ferramentas como Excel, Power BI, Apache Superset, e conhecimentos em Python, Java, SQL, PostgreSQL, Git e GitHub. Sou adepto de metodologias ágeis e tenho experiência em trabalho em equipe e comunicação.
+              Trabalho como Analista de Dados na Mundivox Communications, utilizando ferramentas como Excel, Power BI, Apache Superset, e conhecimentos em Python, Java, SQL, PostgreSQL, Git e GitHub. Sou adepto de metodologias ágeis e tenho experiência em trabalho em equipe e comunicação.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Além da minha carreira técnica, sou apaixonado por esportes e praticante de lutas, tendo inclusive dado aulas de boxe. Já trabalhei com vendas, o que me ajudou a desenvolver habilidades de negociação e atendimento ao cliente. Falo inglês avançado e espanhol básico.
+              Além da minha carreira técnica, sou apaixonado por esportes e praticante de lutas, tendo inclusive dado aulas de boxe. Já trabalhei com vendas, o que me ajudou a desenvolver habilidades de negociação e atendimento ao cliente. Falo inglês avançado e espanhol básico.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-            Sempre em busca de novos desafios, estou focado em continuar meu crescimento profissional e contribuir com soluções inovadoras.
+              Sempre em busca de novos desafios, estou focado em continuar meu crescimento profissional e contribuir com soluções inovadoras.
             </p>
           </div>
         </div>
@@ -113,17 +121,6 @@ function App() {
                 <div>
                   <span className="text-gray-700 font-medium">{skill.name}</span>
                   <div className="text-gray-600 text-sm">{skill.level}</div>
-                </div>
-              </div>
-            ))}
-
-            {/* Adicionando os ícones de Teste */}
-            {[...Array(4)].map((_, index) => (
-              <div key={`teste-${index}`} className="flex items-center p-4" data-aos="fade-up">
-                <img src={IconeTeste} alt="Teste" className="w-8 h-8 mr-4" />
-                <div>
-                  <span className="text-gray-700 font-medium">Teste</span>
-                  <div className="text-gray-600 text-sm">Básico</div>
                 </div>
               </div>
             ))}
