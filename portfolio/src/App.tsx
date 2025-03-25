@@ -17,6 +17,7 @@ import IconeIngles from "./img/icone-ingles.png";
 import IconeEspanhol from "./img/icone-espanha.png";
 import FotoPortoConserta2 from "./img/projeto-porto-seguro-tela-2.png"
 import FotoPortoConserta3 from "./img/projeto-porto-seguro-tela-3.png"
+import FotoPortoConserta1 from "./img/projeto-porto-conserta-tela-1.png"
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
@@ -61,7 +62,7 @@ function App() {
       description: "Projeto de criação de site usando HTML e CSS.",
       mainImage: FotoPortoConserta,
       images: [
-        FotoPortoConserta,
+        FotoPortoConserta1,
         FotoPortoConserta2,
         FotoPortoConserta3
       ],
