@@ -15,6 +15,8 @@ import IconeWord from "./img/icone-word.png";
 import IconePowerPoint from "./img/icone-power-point.png";
 import IconeIngles from "./img/icone-ingles.png";
 import IconeEspanhol from "./img/icone-espanha.png";
+import FotoPortoConserta2 from "./img/projeto-porto-seguro-tela-2.png"
+import FotoPortoConserta3 from "./img/projeto-porto-seguro-tela-3.png"
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
@@ -59,9 +61,9 @@ function App() {
       description: "Projeto de criação de site usando HTML e CSS.",
       mainImage: FotoPortoConserta,
       images: [
-        "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80"
+        FotoPortoConserta,
+        FotoPortoConserta2,
+        FotoPortoConserta3
       ],
       longDescription: "O Porto Conserta é uma plataforma web desenvolvida para conectar prestadores de serviços com clientes na região do Porto. O projeto foi construído utilizando HTML e CSS, com foco em criar uma interface intuitiva e responsiva. Implementamos recursos de busca, filtros e um sistema de avaliações."
     },
