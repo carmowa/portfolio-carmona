@@ -19,3 +19,26 @@ body {
 .project-card {
   @apply transition-transform duration-300 hover:scale-105;
 }
+
+/* Animações para o carrossel de imagens */
+.slide-image {
+  @apply transition-opacity duration-500 ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
