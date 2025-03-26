@@ -15,9 +15,9 @@ import IconeWord from "./img/icone-word.png";
 import IconePowerPoint from "./img/icone-power-point.png";
 import IconeIngles from "./img/icone-ingles.png";
 import IconeEspanhol from "./img/icone-espanha.png";
-import FotoPortoConserta2 from "./img/projeto-porto-seguro-tela-2.png"
-import FotoPortoConserta3 from "./img/projeto-porto-seguro-tela-3.png"
-import FotoPortoConserta1 from "./img/projeto-porto-conserta-tela-1.png"
+import FotoPortoConserta2 from "./img/projeto-porto-seguro-tela-2.png";
+import FotoPortoConserta3 from "./img/projeto-porto-seguro-tela-3.png";
+import FotoPortoConserta1 from "./img/projeto-porto-conserta-tela-1.png";
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
@@ -66,7 +66,12 @@ function App() {
         FotoPortoConserta2,
         FotoPortoConserta3
       ],
-      longDescription: "O Porto Conserta é uma plataforma web desenvolvida para conectar prestadores de serviços com clientes na região do Porto. O projeto foi construído utilizando HTML e CSS, com foco em criar uma interface intuitiva e responsiva. Implementamos recursos de busca, filtros e um sistema de avaliações."
+      longDescription: (
+        <>
+         Em parceria com a seguradora Porto Seguro, nossa equipe desenvolveu uma plataforma digital voltada para a otimização dos serviços de reparo e manutenção de veículos. Utilizando HTML e CSS, o projeto foi projetado com o objetivo de proporcionar uma experiência de usuário intuitiva e eficiente, permitindo que os clientes possam solicitar serviços de forma rápida e prática. A plataforma conta com funcionalidades como cadastro de prestadores de serviços, agendamento de atendimentos e um sistema de acompanhamento de status de reparo, tudo com uma interface responsiva e amigável.
+        <br />
+        Acesse o projeto: <a href="https://github.com/rtof06/projeto-porto-conserta-v4" target="_blank" rel="noopener noreferrer">https://github.com/rtof06/projeto-porto-conserta-v4</a>
+        </> )
     },
     {
       title: "Energia Solidária: Plataforma Digital",
@@ -111,7 +116,7 @@ function App() {
     if (selectedProject && !isTransitioning) {
       setIsTransitioning(true);
       setTimeout(() => {
-        setCurrentImageIndex((prev) => 
+        setCurrentImageIndex((prev) =>
           prev === selectedProject.images.length - 1 ? 0 : prev + 1
         );
         setTimeout(() => {
@@ -125,7 +130,7 @@ function App() {
     if (selectedProject && !isTransitioning) {
       setIsTransitioning(true);
       setTimeout(() => {
-        setCurrentImageIndex((prev) => 
+        setCurrentImageIndex((prev) =>
           prev === 0 ? selectedProject.images.length - 1 : prev - 1
         );
         setTimeout(() => {
@@ -278,16 +283,16 @@ function App() {
             >
               <X size={24} />
             </button>
-            
+
             <div className="relative overflow-hidden">
               <img
                 src={selectedProject.images[currentImageIndex]}
                 alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
                 className={`w-full h-[400px] object-cover transition-opacity duration-500 ${
-                  isTransitioning ? 'opacity-0' : 'opacity-100'
+                  isTransitioning ? "opacity-0" : "opacity-100"
                 }`}
               />
-              
+
               {selectedProject.images.length > 1 && (
                 <>
                   <button
@@ -306,7 +311,7 @@ function App() {
                   </button>
                 </>
               )}
-              
+
               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
                 {selectedProject.images.map((_, index) => (
                   <button
@@ -323,13 +328,13 @@ function App() {
                       }
                     }}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentImageIndex ? 'bg-white scale-125' : 'bg-white/50 scale-100'
+                      index === currentImageIndex ? "bg-white scale-125" : "bg-white/50 scale-100"
                     }`}
                   />
                 ))}
               </div>
             </div>
-            
+
             <div className="p-6">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">{selectedProject.title}</h3>
               <p className="text-gray-600 leading-relaxed">{selectedProject.longDescription}</p>

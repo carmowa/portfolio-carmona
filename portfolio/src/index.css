@@ -15,9 +15,9 @@ body {
   @apply transition-all duration-300;
 }
 
-/* Efeito hover para cards de projetos */
+/* Efeito hover para cards de projetos com deslize para o lado */
 .project-card {
-  @apply transition-transform duration-300 hover:scale-105;
+  @apply transition-transform duration-500 ease-in-out hover:translate-x-4;
 }
 
 /* Animações para o carrossel de imagens */
